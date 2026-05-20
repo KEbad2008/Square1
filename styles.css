@@ -16,6 +16,14 @@ h2 {
     margin-top: -25px;
 }
 
+p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: pink;
+    font-style: italic;
+}
+
 .gridboxes {
     display: grid;
     grid-template-columns: repeat(3, 350px);
@@ -24,19 +32,34 @@ h2 {
 }
 
 .griditem {
-    background-color:burlywood;
+    background-color: burlywood;
     border: 2px solid #ff0000;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-size: 25px;
     font-weight: bold;
+
     border-radius: 20px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.griditem:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+
+    cursor: pointer;
 }
 
 .bimage1 {
 background-image:
-        linear-gradient(rgba(0,0,0,0.4),
+        linear-gradient(rgba(255, 0, 98, 0.4),
                         rgba(0,0,0,0.4)),
         url("tictactoe.jpeg");    background-size: cover;
     background-position: center;
@@ -50,13 +73,14 @@ background-image:
 
 .bimage2 {
 background-image:
-        linear-gradient(rgba(0,0,0,0.4),
+        linear-gradient(rgba(92, 10, 67, 0.4),
                         rgba(0,0,0,0.4)),
-        url("temp.png");    background-size: cover;
+        url("tunes.jpeg");    background-size: cover;
     background-position: center;
 
     color: white;
     position: relative;
+    text-align: center;
 }
 
 .bimage3 {
@@ -72,7 +96,7 @@ background-image:
 
 .bimage4 {
 background-image:
-        linear-gradient(rgba(0,0,0,0.4),
+        linear-gradient(rgba(0, 0, 0, 0.4),
                         rgba(0,0,0,0.4)),
         url("comingsoon.jpeg");    background-size: cover;
     background-position: center;
