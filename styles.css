@@ -49,6 +49,10 @@ p {
         box-shadow 0.2s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .griditem:hover {
     transform: translateY(-8px);
 
